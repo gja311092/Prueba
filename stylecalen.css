@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --color-principal:#A02142;
+    --color-secundario: #691B31;
+    --color-terciario:#ddc3a1;
+    --color-blanco:#FFFFFF;
+    --letra: 'Montserrat', sans-serif;
+}
+.principal{
+    display: flex;
+    background-image: url(./images/fondocalendario.png);
+    height: 100vh;
+    width: 100vh;
+}
+
+.fecha{
+    color: grey;
+    opacity: 0.65;
+    font-family: var(--letra);
+    font-weight: 700;
+    font-size: 6em;
+    margin-left: .4em;
+}
+.nombre{
+    position: relative;
+    top: -2.2em;
+    left: 6.35em;
+    color: #6f7271;
+    font-family: var(--letra);
+    font-weight: 700;
+    font-size: 2.3em;
+}
+.cuadrocalendario{
+    width: 76em;
+    height: 46.063em;
+    background-color: var(--color-secundario);
+    margin-left: 2.6em;
+    margin-right: auto;
+    margin-top: -3em;
+}
+.cuadro-base{
+    width: 31em;
+    height: 54.063em;
+    background-color: var(--color-principal);
+    margin-top: 4.5em;
+    margin-left: 8em;
+}
+.cuadro-flotando{
+    width: 31em;
+    height: 54.063em;
+    background-color: var(--color-secundario);
+    margin-top: -55.5em;
+    margin-left: 7em;
+    position: relative;
+}
+.detalle{
+    text-align: center;
+    color: var(--color-blanco);
+    font-family: var(--letra);
+    font-weight: 700;
+    font-size: 2.3em;
+}
+
+::placeholder{
+    color: black;
+}
+
+.tema{
+    margin-left: 4em;
+    width: 23em;
+    height: 2em;
+    margin-top: 2em;
+    font-family: var(--letra);
+    font-size: 1em;
+    font-weight: 700;
+    
+}
+
+.bordado{
+    display: flex;
+    height: 5.75em;
+    margin-top: 21em;
+    margin-left: 5em;
+    align-items: end;
+}
+input[type=text]{
+    padding: 10px 8px;
+
+}
+
+input[type=number]{
+    padding: 10px 8px;
+
+}
+input:focus::placeholder{
+    color: transparent;
+}
